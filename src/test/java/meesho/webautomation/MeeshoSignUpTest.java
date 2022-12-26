@@ -57,7 +57,7 @@ public class MeeshoSignUpTest {
 	}
 	
 	@Test(priority=1)
-	public void signOut()
+	public void signGet()
 	{
 		System.out.println("This is first line in signOut method");
 		System.out.println("This is second line in signOut method");
@@ -68,6 +68,13 @@ public class MeeshoSignUpTest {
 	{
 		System.out.println("This is first line in signOff method");
 		System.out.println("This is second line in signOff method");
+		
+	}
+	@Test(priority=4)
+	public void signOff()
+	{
+		System.out.println("This is first line in signGet method");
+		System.out.println("This is second line in signGet method");
 		
 	}
 	
