@@ -2,7 +2,9 @@ package meesho.webautomation;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -24,11 +26,14 @@ public class MeeshoSignUpTest {
 
 	@Test(priority = 1)
 	public void signUp() throws InterruptedException {
-		driver.findElement(By.xpath(
-				"//div[@class='Card__BaseCard-sc-b3n78k-0 cWVjzZ TabWrapper-sc-1edf3ww-0 Header__StyledProfileMenu-sc-1qdannb-2 bdFBCn dmVzoI TabWrapper-sc-1edf3ww-0 Header__StyledProfileMenu-sc-1qdannb-2 bdFBCn dmVzoI']"))
-				.click();
+		WebElement ele=driver.findElement(By.xpath(
+				"//div[@class='sc-jSUZER igEZJF TabWrapper-sc-1edf3ww-0 Header__StyledProfileMenu-sc-1qdannb-2 kyKAmE HCCmz TabWrapper-sc-1edf3ww-0 Header__StyledProfileMenu-sc-1qdannb-2 kyKAmE HCCmz']"));
+		Actions action = new Actions(driver);
+
+		//Performing the mouse hover action on the target element.
+		action.moveToElement(ele).click().build().perform();		
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("(//span[@class='Text__StyledText-sc-oo0kvp-0 jNFjuh'])[1]")).click();
+		driver.findElement(By.xpath("//svg[@class='sc-bcXHqe gQMkUy hover']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//div[@class='Input__InputContainer-sc-1goybxj-0 bRwZjT']")).click();
 		Thread.sleep(2000);
@@ -50,6 +55,22 @@ public class MeeshoSignUpTest {
 		// Thread.sleep(2000);
 
 	}
+	
+	@Test(priority=1)
+	public void signOut()
+	{
+		System.out.println("This is first line in signOut method");
+		System.out.println("This is second line in signOut method");
+		
+	}
+	@Test(priority=3)
+	public void signOff()
+	{
+		System.out.println("This is first line in signOff method");
+		System.out.println("This is second line in signOff method");
+		
+	}
+	
 
 	@AfterClass
 	public void quitDriver() {
