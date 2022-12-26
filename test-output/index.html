@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\syedm\AppData\Local\Temp\testng-eclipse--1738132087\testng-customsuite.xml</span>
+                    <span>C:\Users\syedm\AppData\Local\Temp\testng-eclipse-1056257015\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -116,6 +116,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="meesho.webautomation.MeeshoSignUpTest" class="method navigator-link" hash-for-method="signGet">signGet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="meesho.webautomation.MeeshoSignUpTest" class="method navigator-link" hash-for-method="signOff">signOff</a> <!-- method navigator-link -->
@@ -155,8 +160,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;AZMAL&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\syedm\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60065}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c85d2b9e0dde4463fb4a033078f74b93
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\syedm\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60883}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b9299b749ffb808d265269d7a3e4507
 *** Element info: {Using=xpath, value=//svg[@class=&apos;sc-bcXHqe gQMkUy hover&apos;]}
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
@@ -212,6 +217,13 @@ Session ID: c85d2b9e0dde4463fb4a033078f74b93
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="signGet">
+                  </a> <!-- signGet -->
+                  <span class="method-name">signGet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="signOff">
                   </a> <!-- signOff -->
                   <span class="method-name">signOff</span>
@@ -229,7 +241,7 @@ Session ID: c85d2b9e0dde4463fb4a033078f74b93
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\syedm\AppData\Local\Temp\testng-eclipse--1738132087\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\syedm\AppData\Local\Temp\testng-eclipse-1056257015\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -278,19 +290,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'signUp')
 data.setCell(0, 2, 'meesho.webautomation.MeeshoSignUpTest')
-data.setCell(0, 3, 2220);
+data.setCell(0, 3, 2216);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'signOut')
 data.setCell(1, 2, 'meesho.webautomation.MeeshoSignUpTest')
-data.setCell(1, 3, 9);
+data.setCell(1, 3, 67);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'signOff')
 data.setCell(2, 2, 'meesho.webautomation.MeeshoSignUpTest')
-data.setCell(2, 3, 1);
+data.setCell(2, 3, 3);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'signGet')
+data.setCell(3, 2, 'meesho.webautomation.MeeshoSignUpTest')
+data.setCell(3, 3, 1);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -328,21 +344,25 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">signOut</span>
-                <span class="method-start">7875 ms</span>
+                <span class="method-start">8701 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">signUp</span>
-                <span class="method-start">7889 ms</span>
+                <span class="method-start">8852 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">signOff</span>
-                <span class="method-start">10113 ms</span>
+                <span class="method-start">11073 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signGet</span>
+                <span class="method-start">11080 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">10114 ms</span>
+                <span class="method-start">11085 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
